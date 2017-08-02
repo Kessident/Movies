@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Movies-Now-Playing</title>
+</head>
+<body>
+<h1>Now Playing</h1>
+
+<nav>
+    <a href="/now-playing">Now Playing</a>
+    <a href="/medium-popular-long-name">Medium Popular Long Name</a>
+    <a href="/overview-mashup">Overview Mashup</a>
+</nav>
+
+<div th:each="movie : ${movieList}">
+    <img width="150px" th:src="'http://image.tmdb.org/t/p/original' + ${movie.posterPath}"/>
+    <span th:text="${movie.title}"></span>
+</div>
+</body>
+</html>

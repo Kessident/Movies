@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Movies-Overview-Mashup</title>
+</head>
+<body>
+<h1>Overview Mashup</h1>
+
+<nav>
+    <a href="/now-playing">Now Playing</a>
+    <a href="/medium-popular-long-name">Medium Popular Long Name</a>
+    <a href="/overview-mashup">Overview Mashup</a>
+</nav>
+<div th:text="${mashupString}"></div>
+</body>
+</html>
